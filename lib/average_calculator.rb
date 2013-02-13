@@ -1,9 +1,7 @@
 class AverageCalculator
 
   def calc(appearances, at_bat, hits)
-    hits / at_bat
+    hits.to_f / at_bat
   end
 
 end
-
-

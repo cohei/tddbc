@@ -9,7 +9,7 @@ describe "AverageCalculator" do
   end
 
   it "打席5 打数4 安打数1" do
-    AverageCalculator.new.calc(3, 2, 1).should eq 0.25
+    AverageCalculator.new.calc(5, 4, 1).should eq 0.25
   end
 
 end
