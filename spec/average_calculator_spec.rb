@@ -28,5 +28,4 @@ describe "AverageCalculator" do
     AverageCalculator.new.calc(5, 0, 0).should eq 0.000
   end
 
-  
 end

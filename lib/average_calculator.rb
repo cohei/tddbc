@@ -9,4 +9,5 @@ class AverageCalculator
       (hits.to_f / at_bat).round(3)
     end
   end
+
 end
