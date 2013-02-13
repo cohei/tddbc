@@ -20,4 +20,8 @@ describe "AverageCalculator" do
     AverageCalculator.new.calc(10, 3, 2).should eq 0.667
   end
 
+  it "打席0 打数0 安打数0" do
+    AverageCalculator.new.calc(0, 0, 0).should eq nil
+  end
+  
 end
