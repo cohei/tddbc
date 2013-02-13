@@ -12,4 +12,12 @@ describe "AverageCalculator" do
     AverageCalculator.new.calc(5, 4, 1).should eq 0.25
   end
 
+  it "打席10 打数3 安打数1" do
+    AverageCalculator.new.calc(10, 3, 1).should eq 0.333
+  end
+
+  it "打席10 打数3 安打数2" do
+    AverageCalculator.new.calc(10, 3, 2).should eq 0.667
+  end
+
 end
