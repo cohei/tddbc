@@ -23,5 +23,10 @@ describe "AverageCalculator" do
   it "打席0 打数0 安打数0" do
     AverageCalculator.new.calc(0, 0, 0).should eq nil
   end
+
+  it "打席5 打数0 安打数0" do
+    AverageCalculator.new.calc(5, 0, 0).should eq 0.000
+  end
+
   
 end
