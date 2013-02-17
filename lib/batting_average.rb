@@ -1,4 +1,17 @@
 class BattingAverage
+  include Comparable
+  attr_reader :appearances
+
+  def <=>(another)
+    if !to_f && !another.to_f
+      appearances <=> another.appearances
+    elsif !to_f
+      -1
+    elsif !another.to_f
+      1
+    end
+    to_f <=> another.to_f
+  end
 
   def initialize(appearances, at_bat, hits)
     @appearances = appearances
